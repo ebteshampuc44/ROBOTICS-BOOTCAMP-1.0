@@ -1,16 +1,28 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const goHomeSmooth = () => {
+    navigate("/"); // প্রথমে home route এ নিয়ে যাবে
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // তারপর smooth scroll করে উপরে
+    }, 100); 
+    setIsOpen(false);
+  };
 
   return (
     <nav className="bg-[#1E3A8A] text-white sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 sm:px-6 py-2 flex items-center justify-between">
         
-        {/* Left Logo + Text */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        {/* Left Logo + Text (Click = Smooth scroll to top) */}
+        <div
+          onClick={goHomeSmooth}
+          className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition cursor-pointer"
+        >
           <img
             src="https://i.ibb.co.com/XfYht2cw/Whats-App-Image-2024-02-08-at-14-52-49-22e8eefa-removebg-preview.png"
             alt="Premier University Logo"
