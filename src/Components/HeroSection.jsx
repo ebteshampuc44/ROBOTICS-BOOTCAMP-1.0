@@ -258,8 +258,8 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 1 }}
           >
             {[
-              { icon: "🤖", text: "Basic Robotics & Projects" },
-              { icon: "💻", text: "Bot Design & Programming" },
+              { icon: "🤖", text: "Empower Robotic Innovation" },
+              { icon: "💻", text: "Code Tomorrow’s Tech" },
             ].map((feature, index) => (
               <motion.div
                 key={index}

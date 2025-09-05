@@ -247,7 +247,7 @@ const Home = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Arduino Programming & Integration</h3>
-                <p className="text-gray-600 mb-4 transition-all duration-300 group-hover:text-gray-800">Introduction to Arduino IDE, hardware connections, and sensor-based system development.</p>
+                <p className="text-gray-600 mb-4 transition-all duration-300 group-hover:text-gray-800">Introduction to Arduino IDE hardware connections and project development.</p>
                
               </div>
             </div>
@@ -258,7 +258,7 @@ const Home = () => {
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10 opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
                 <img 
-                  src="https://i.ibb.co.com/dJ08w5zj/Generated-Image-September-03-2025-12-43-AM.jpg" 
+                  src="https://i.ibb.co.com/b5xxGXpS/Generated-Image-September-05-2025-10-27-PM-jpeg.jpg" 
                   alt="Sensor Integration" 
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 transform-gpu"
                   onError={(e) => {
@@ -282,7 +282,7 @@ const Home = () => {
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10 opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
                 <img 
-                  src="https://i.ibb.co.com/GfPVwVnT/pxfuel-1.webp" 
+                  src="https://i.ibb.co.com/sphc1ZHj/Generated-Image-September-05-2025-8-33-PM-jpeg.jpg" 
                   alt="Actuators & Motion" 
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 transform-gpu"
                   onError={(e) => {
@@ -343,7 +343,7 @@ const Home = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-800 group-hover:text-red-600 transition-colors duration-300">Raspberry Pi & Machine Learning</h3>
-                <p className="text-gray-600 mb-4 transition-all duration-300 group-hover:text-gray-800">Hands-on with Raspberry Pi, Python programming, and an introduction to ML in robotics.</p>
+                <p className="text-gray-600 mb-4 transition-all duration-300 group-hover:text-gray-800">Hands-on with Raspberry Pi, Python programming, and implementing ML models in robotics.</p>
                
               </div>
             </div>
@@ -416,32 +416,30 @@ const Home = () => {
                       <svg className="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
-                      Access to all workshop sessions
+                      Hands-on Project Kits for practical learning
+
                     </li>
                     <li className="flex items-center">
                       <svg className="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
-                      Hands-on project materials
+                     Souvenir Pack with essentials and goodies
+
                     </li>
                     <li className="flex items-center">
                       <svg className="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
-                      Certificate of completion
+                    Certificate of Completion for all participants
+
                     </li>
                     <li className="flex items-center">
                       <svg className="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
-                      Souvenir pack
+                 Refreshments in Every Session to keep you active
                     </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                      Internship opportunities
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
