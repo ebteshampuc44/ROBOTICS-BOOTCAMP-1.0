@@ -162,25 +162,7 @@ const DetailedCurriculum = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Ready to embark on this learning journey?
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Join our Robotics Bootcamp 1.0 and transform your skills
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Link 
-              to="/" 
-              className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              Back to Home
-            </Link>
-            <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-              Register Now
-            </button>
-          </div>
-        </div>
+
       </div>
     </div>
   );
