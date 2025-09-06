@@ -83,13 +83,13 @@ const Footer = () => {
           
           <div className="mt-4">
             <p className="text-sm sm:text-lg font-medium mb-2">Subscribe to our newsletter</p>
-            <div className="flex flex-col">
+            <div className="flex">
               <input 
                 type="email" 
                 placeholder="Your email address" 
-                className="w-full px-4 py-2 bg-[#0d2a75] border border-[#3a7eff]/40 rounded-t focus:outline-none focus:ring-2 focus:ring-[#3a7eff] text-sm sm:text-base"
+                className="flex-grow px-4 py-2 bg-[#0d2a75] border border-[#3a7eff]/40 rounded-l focus:outline-none focus:ring-2 focus:ring-[#3a7eff] text-sm sm:text-base"
               />
-              <button className="bg-[#3a7eff] hover:bg-[#5a92ff] text-white px-4 py-2 rounded-b transition-colors text-sm sm:text-base font-semibold mt-[-1px]">
+              <button className="bg-[#3a7eff] hover:bg-[#5a92ff] text-white px-4 py-2 rounded-r transition-colors text-sm sm:text-base font-semibold whitespace-nowrap">
                 Subscribe
               </button>
             </div>

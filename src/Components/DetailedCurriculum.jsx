@@ -170,7 +170,7 @@ const DetailedCurriculum = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-blue-100 rounded-full">
-                <img src="https://i.ibb.co.com/Y7JLGmK7/package-cube-box-for-delivery.png" alt="Programming" className="w-12 h-12" />
+                <img src="https://i.ibb.co.com/wr6cLc1Z/energy-system.png" alt="Programming" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Project</h3>
               <p className="text-gray-600">Innovative, impactful project with excellent execution and teamwork</p>
@@ -178,7 +178,7 @@ const DetailedCurriculum = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-green-100 rounded-full">
-                <img src="https://i.ibb.co.com/rKQgbDQg/party.png" alt="Microcontroller" className="w-12 h-12" />
+                <img src="https://i.ibb.co.com/VW657GRg/innovation.png" alt="Microcontroller" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Problem Solving</h3>
               <p className="text-gray-600">Creative solutions with logical troubleshooting and optimization</p>
@@ -186,7 +186,7 @@ const DetailedCurriculum = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-purple-100 rounded-full">
-                <img src="https://i.ibb.co.com/sknQpHZ/meeting.png" alt="Software Development" className="w-12 h-12" />
+                <img src="https://i.ibb.co.com/C5wrxYN8/developer.png" alt="Software Development" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Programmer</h3>
               <p className="text-gray-600">Efficient coding with strong algorithms and data structures</p>

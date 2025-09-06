@@ -1,10 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+
+// Custom hook to detect clicks outside an element
+const useOutsideClick = (ref, callback) => {
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        callback();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref, callback]);
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  
+  // Create ref for mobile menu
+  const mobileMenuRef = useRef(null);
+  const menuButtonRef = useRef(null);
+  
+  // Use custom hook to detect outside clicks
+  useOutsideClick(mobileMenuRef, () => {
+    if (isOpen) setIsOpen(false);
+  });
 
   const goHomeSmooth = () => {
     navigate("/");
@@ -47,6 +72,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
+          ref={menuButtonRef}
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-2 rounded-md hover:bg-[#2C4CA7] transition flex-shrink-0 outline-none focus:outline-none focus:ring-0"
         >
@@ -54,21 +80,22 @@ const Navbar = () => {
         </button>
       </div>
 
-{/* Mobile Dropdown */}
-{isOpen && (
-  <div className="md:hidden flex flex-col items-center gap-3 pb-4 pt-4 bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] px-4 border-t border-[#87CEEB]/30">
-    <Link to="/curriculum" onClick={() => setIsOpen(false)}>
-      <button className="w-64 px-4 py-2.5 rounded-full bg-white text-[#2C4CA7] font-semibold shadow-md hover:bg-gray-200 transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
-        Detailed Curriculum
-      </button>
-    </Link>
-    <button className="w-64 px-4 py-2.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
-      Register Now
-    </button>
-  </div>
-)}
-
-
+      {/* Mobile Dropdown with ref */}
+      {isOpen && (
+        <div 
+          ref={mobileMenuRef}
+          className="md:hidden flex flex-col items-center gap-3 pb-4 pt-4 bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] px-4 border-t border-[#87CEEB]/30"
+        >
+          <Link to="/curriculum" onClick={() => setIsOpen(false)}>
+            <button className="w-64 px-4 py-2.5 rounded-full bg-white text-[#2C4CA7] font-semibold shadow-md hover:bg-gray-200 transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
+              Detailed Curriculum
+            </button>
+          </Link>
+          <button className="w-64 px-4 py-2.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
+            Register Now
+          </button>
+        </div>
+      )}
     </nav>
   );
 };
