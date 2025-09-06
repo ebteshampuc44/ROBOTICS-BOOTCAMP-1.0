@@ -7,15 +7,15 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const goHomeSmooth = () => {
-    navigate("/"); // প্রথমে home route এ নিয়ে যাবে
+    navigate("/");
     setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" }); // তারপর smooth scroll করে উপরে
-    }, 100); 
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
     setIsOpen(false);
   };
 
   return (
-    <nav className="bg-[#1E3A8A] text-white sticky top-0 z-50 shadow-md">
+    <nav className="bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] text-white sticky top-0 z-50 shadow-md backdrop-blur-2xl border-b border-[#87CEEB]/30">
       <div className="container mx-auto px-4 sm:px-6 py-2 flex items-center justify-between">
         
         {/* Left Logo + Text (Click = Smooth scroll to top) */}
@@ -36,11 +36,11 @@ const Navbar = () => {
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-3">
           <Link to="/curriculum">
-            <button className="px-4 py-1.5 rounded-full bg-white text-[#1E3A8A] font-semibold shadow-md hover:bg-gray-200 hover:scale-105 transition-all duration-300 text-sm md:text-base">
+            <button className="px-4 py-1.5 rounded-full bg-white text-[#2C4CA7] font-semibold shadow-md hover:bg-gray-200 hover:scale-105 transition-all duration-300 text-sm md:text-base">
               Detailed Curriculum
             </button>
           </Link>
-          <button className="px-4 py-1.5 rounded-full bg-[#2563EB] text-white font-semibold shadow-md hover:bg-[#3B82F6] hover:scale-105 transition-all duration-300 text-sm md:text-base">
+          <button className="px-4 py-1.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] hover:scale-105 transition-all duration-300 text-sm md:text-base">
             Register Now
           </button>
         </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-md hover:bg-[#2C4EA0] transition"
+          className="md:hidden p-2 rounded-md hover:bg-[#2C4CA7] transition"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -56,13 +56,13 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center gap-3 pb-4 bg-[#1E3A8A] px-4">
+        <div className="md:hidden flex flex-col items-center gap-3 pb-4 bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] px-4 border-t border-[#87CEEB]/30">
           <Link to="/curriculum" onClick={() => setIsOpen(false)}>
-            <button className="w-full px-4 py-2 rounded-full bg-white text-[#1E3A8A] font-semibold shadow-md hover:bg-gray-200 transition-all duration-300 text-sm">
+            <button className="w-full px-4 py-2 rounded-full bg-white text-[#2C4CA7] font-semibold shadow-md hover:bg-gray-200 transition-all duration-300 text-sm">
               Detailed Curriculum
             </button>
           </Link>
-          <button className="w-full px-4 py-2 rounded-full bg-[#2563EB] text-white font-semibold shadow-md hover:bg-[#3B82F6] transition-all duration-300 text-sm">
+          <button className="w-full px-4 py-2 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm">
             Register Now
           </button>
         </div>

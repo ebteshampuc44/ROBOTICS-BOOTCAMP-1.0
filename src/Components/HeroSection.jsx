@@ -12,17 +12,15 @@ const HeroSection = () => {
   const pos3 = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
   const mouse = useRef({ x: pos.current.x, y: pos.current.y });
 
-  // Check if device is mobile on component mount and resize
+  // Check if device is mobile
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
     checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-    
+    window.addEventListener("resize", checkIfMobile);
     return () => {
-      window.removeEventListener('resize', checkIfMobile);
+      window.removeEventListener("resize", checkIfMobile);
     };
   }, []);
 
@@ -68,7 +66,7 @@ const HeroSection = () => {
     animate();
   }, []);
 
-  // Tilt effect for the robot image
+  // Tilt effect for video card
   const calculateTilt = (e, element) => {
     const rect = element.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -154,9 +152,9 @@ const HeroSection = () => {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 md:px-12 lg:px-20 
                       grid md:grid-cols-2 gap-8 sm:gap-12 items-center pt-8 md:pt-0">
         
-        {/* Left Robot Image - Will be on top on mobile */}
+        {/* Left Video */}
         <motion.div
-          className={`flex justify-center ${isMobile ? 'order-1' : 'order-2 md:order-1'}`}
+          className={`flex justify-center ${isMobile ? "order-1" : "order-2 md:order-1"}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -181,14 +179,18 @@ const HeroSection = () => {
                 }
               }}
             >
-              <img
-                src="https://i.ibb.co/ynGDFnc5/cartoon-ai-robot-scene.jpg"
-                alt="Robot Rover"
+              {/* Video instead of image */}
+              <video
+                src="/videos/PUCRC.mp4"
                 className="w-full h-auto object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </motion.div>
 
-            {/* Image Glow Effect */}
+            {/* Video Glow Effect */}
             <motion.div
               className="absolute inset-0 bg-[#87CEEB] opacity-0 rounded-lg blur-xl -z-10"
               animate={{
@@ -204,15 +206,15 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Right Content - Will be below on mobile */}
+        {/* Right Content */}
         <motion.div
-          className={`${isMobile ? 'order-2 text-center' : 'order-1 md:order-2 text-left'}`}
+          className={`${isMobile ? "order-2 text-center" : "order-1 md:order-2 text-left"}`}
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.div
-            className={`mb-4 ${isMobile ? 'text-center' : 'text-left -ml-5'} text-base sm:text-lg md:text-xl text-gray-200`}
+            className={`mb-4 ${isMobile ? "text-center" : "text-left -ml-5"} text-base sm:text-lg md:text-xl text-gray-200`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -221,7 +223,7 @@ const HeroSection = () => {
             <span className="text-[#87CEEB]">Presents</span>
           </motion.div>
 
-          <div className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight ${isMobile ? 'text-center' : 'text-left -ml-5'}`}>
+          <div className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight ${isMobile ? "text-center" : "text-left -ml-5"}`}>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -240,7 +242,7 @@ const HeroSection = () => {
           </div>
 
           <motion.p
-            className={`mb-6 sm:mb-8 text-sm sm:text-base md:text-lg ${isMobile ? 'text-center' : 'text-left -ml-5'} text-gray-300 max-w-lg ${isMobile ? 'mx-auto' : ''}`}
+            className={`mb-6 sm:mb-8 text-sm sm:text-base md:text-lg ${isMobile ? "text-center" : "text-left -ml-5"} text-gray-300 max-w-lg ${isMobile ? "mx-auto" : ""}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
@@ -252,7 +254,7 @@ const HeroSection = () => {
 
           {/* Features */}
           <motion.div
-            className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10 ${isMobile ? 'justify-center' : '-ml-5'}`}
+            className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10 ${isMobile ? "justify-center" : "-ml-5"}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
@@ -263,7 +265,7 @@ const HeroSection = () => {
             ].map((feature, index) => (
               <motion.div
                 key={index}
-                className={`${isMobile ? 'justify-center text-center' : 'text-center sm:text-left flex flex-col sm:flex-row items-center gap-3'}`}
+                className={`${isMobile ? "justify-center text-center" : "text-center sm:text-left flex flex-col sm:flex-row items-center gap-3"}`}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.2 },
@@ -289,11 +291,11 @@ const HeroSection = () => {
             ))}
           </motion.div>
 
-          {/* Highlight Button - Centered on mobile */}
+          {/* Highlight Button */}
           <motion.div
             className={`bg-[#87CEEB] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 
                        rounded-md inline-block shadow-md cursor-pointer relative overflow-hidden 
-                       text-sm sm:text-base md:text-lg ${isMobile ? 'mx-auto block text-center' : ''}`}
+                       text-sm sm:text-base md:text-lg ${isMobile ? "mx-auto block text-center" : ""}`}
             whileHover={{
               scale: 1.05,
               boxShadow: "0 10px 25px rgba(135, 206, 235, 0.4)",
