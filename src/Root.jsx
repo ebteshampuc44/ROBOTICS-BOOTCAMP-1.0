@@ -1,9 +1,16 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
 const Root = () => {
+  const location = useLocation();
+
+  // পাথ পরিবর্তন হলে সর্বদা উপরে স্ক্রোল করবে
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navbar */}

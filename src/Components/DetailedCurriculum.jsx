@@ -90,11 +90,11 @@ const DetailedCurriculum = () => {
 
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl mb-4">
-           6 Days Detailed Curriculum
+          <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl mb-4">
+            6 Days Detailed Curriculum
           </h1>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             A comprehensive journey from robotics fundamentals to advanced Al integration
           </p>
         </div>
@@ -102,9 +102,9 @@ const DetailedCurriculum = () => {
         {/* Opening Ceremony Card */}
         <div className="bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] rounded-xl shadow-lg p-8 mb-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Opening Ceremony</h2>
-            <p className="text-lg mb-2">To be announced soon</p>
-            <p className="text-lg">Hazari Lane Premises, Premier University</p>
+            <h2 className="text-xl font-bold mb-4">Opening Ceremony</h2>
+            <p className="text-base mb-2">To be announced soon</p>
+            <p className="text-base">Hazari Lane Premises, Premier University</p>
           </div>
         </div>
 
@@ -116,26 +116,26 @@ const DetailedCurriculum = () => {
                 <img 
                   src={day.image} 
                   alt={day.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover  transition-transform duration-500 hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 bg-blue-600 text-white font-bold py-1 px-3 rounded-lg text-sm">
+                <div className="absolute top-4 left-4 bg-blue-600 text-white font-bold py-1 px-3 rounded-lg text-xs">
                   {day.day}
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <span className="text-3xl mr-3">{day.emoji}</span>
-                  <h3 className="text-xl font-semibold text-gray-900">{day.title}</h3>
+                  <span className="text-2xl mr-3">{day.emoji}</span>
+                  <h3 className="text-lg font-semibold text-gray-900">{day.title}</h3>
                 </div>
                 
                 <div className="mb-4">
-                  <h4 className="text-sm font-medium text-gray-700 uppercase tracking-wide mb-1">Objective</h4>
-                  <p className="text-gray-600">{day.objective}</p>
+                  <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wide mb-1">Objective</h4>
+                  <p className="text-sm text-gray-600 font-bold">{day.objective}</p>
                 </div>
                 
                 <div className="mb-4">
-                  <h4 className="text-sm font-medium text-gray-700 uppercase tracking-wide mb-2">Learning Outcomes</h4>
-                  <ul className="text-gray-600 space-y-1">
+                  <h4 className="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2">Learning Outcomes</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
                     {day.outcomes.map((outcome, i) => (
                       <li key={i} className="flex items-start">
                         <span className="text-green-500 mr-2">✓</span>
@@ -146,10 +146,10 @@ const DetailedCurriculum = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-sm font-medium text-gray-700 uppercase tracking-wide mb-2">Hands-on Projects</h4>
+                  <h4 className="text-xs font-medium text-gray-700 uppercase tracking-wide mb-2">Hands-on Projects</h4>
                   <div className="flex flex-wrap gap-2">
                     {day.projects.map((project, i) => (
-                      <span key={i} className="inline-block bg-blue-50 text-blue-700 text-xs font-medium px-3 py-1 rounded-full">
+                      <span key={i} className="inline-block bg-blue-50 text-blue-700 text-xs font-medium px-2 py-1 rounded-full">
                         {project}
                       </span>
                     ))}
@@ -160,47 +160,39 @@ const DetailedCurriculum = () => {
           ))}
         </div>
 
-       
-
         {/* Club Wings Section */}
-        <div className="bg-gray-100 rounded-xl p-10 mb-12">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <div className="bg-gray-100 rounded-xl p-8 mb-12">
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Robotics Bootcamp 1.0 Awards
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-blue-100 rounded-full">
-                <img src="https://i.ibb.co.com/wr6cLc1Z/energy-system.png" alt="Programming" className="w-12 h-12" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white p-5 rounded-lg shadow-md text-center">
+              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-100 rounded-full">
+                <img src="https://i.ibb.co.com/wr6cLc1Z/energy-system.png" alt="Programming" className="w-10 h-10" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Project</h3>
-              <p className="text-gray-600">Innovative, impactful project with excellent execution and teamwork</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Best Project</h3>
+              <p className="text-sm text-gray-600">Innovative, impactful project with excellent execution and teamwork</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-green-100 rounded-full">
-                <img src="https://i.ibb.co.com/VW657GRg/innovation.png" alt="Microcontroller" className="w-12 h-12" />
+            <div className="bg-white p-5 rounded-lg shadow-md text-center">
+              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-green-100 rounded-full">
+                <img src="https://i.ibb.co.com/VW657GRg/innovation.png" alt="Microcontroller" className="w-10 h-10" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Problem Solving</h3>
-              <p className="text-gray-600">Creative solutions with logical troubleshooting and optimization</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Best Problem Solving</h3>
+              <p className="text-sm text-gray-600">Creative solutions with logical troubleshooting and optimization</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-purple-100 rounded-full">
-                <img src="https://i.ibb.co.com/C5wrxYN8/developer.png" alt="Software Development" className="w-12 h-12" />
+            <div className="bg-white p-5 rounded-lg shadow-md text-center">
+              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-purple-100 rounded-full">
+                <img src="https://i.ibb.co.com/C5wrxYN8/developer.png" alt="Software Development" className="w-10 h-10" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Programmer</h3>
-              <p className="text-gray-600">Efficient coding with strong algorithms and data structures</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Best Programmer</h3>
+              <p className="text-sm text-gray-600">Efficient coding with strong algorithms and data structures</p>
             </div>
           </div>
         </div>
 
-        {/* Footer CTA */}
-        <div className="text-center py-10">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Ready to Join the Bootcamp?</h2>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
-            Register Now
-          </button>
-        </div>
+    
 
       </div>
     </div>
