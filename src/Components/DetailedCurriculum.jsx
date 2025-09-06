@@ -103,7 +103,7 @@ const DetailedCurriculum = () => {
         <div className="bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] rounded-xl shadow-lg p-8 mb-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Opening Ceremony</h2>
-            <p className="text-lg mb-2">September 20, 2025 | 11:00 AM</p>
+            <p className="text-lg mb-2">To be announced soon</p>
             <p className="text-lg">Hazari Lane Premises, Premier University</p>
           </div>
         </div>
@@ -173,7 +173,7 @@ const DetailedCurriculum = () => {
                 <img src="https://i.ibb.co.com/Y7JLGmK7/package-cube-box-for-delivery.png" alt="Programming" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Project</h3>
-              <p className="text-gray-600">Focus on algorithms, data structures, and competitive programming</p>
+              <p className="text-gray-600">Efficient coding with strong algorithms and data structures</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -181,7 +181,7 @@ const DetailedCurriculum = () => {
                 <img src="https://i.ibb.co.com/rKQgbDQg/party.png" alt="Microcontroller" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Problem Solving</h3>
-              <p className="text-gray-600">Hardware integration and embedded systems development</p>
+              <p className="text-gray-600">Creative solutions with logical troubleshooting and optimization</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -189,7 +189,7 @@ const DetailedCurriculum = () => {
                 <img src="https://i.ibb.co.com/sknQpHZ/meeting.png" alt="Software Development" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Programmer</h3>
-              <p className="text-gray-600">Full-stack development and software engineering practices</p>
+              <p className="text-gray-600">Efficient coding with strong algorithms and data structures</p>
             </div>
           </div>
         </div>

@@ -181,7 +181,7 @@ const HeroSection = () => {
             >
               {/* Video instead of image */}
               <video
-                src="/videos/PUCRC.mp4"
+                src="/videos/PUCRC.MOV"
                 className="w-full h-auto object-cover"
                 autoPlay
                 loop
