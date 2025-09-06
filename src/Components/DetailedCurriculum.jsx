@@ -102,7 +102,7 @@ const DetailedCurriculum = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-            📖 6 Days Detailed Curriculum
+            6 Days Detailed Curriculum
           </h1>
           <p className="mt-5 max-w-xl mx-auto text-xl text-gray-500">
             A comprehensive journey from robotics fundamentals to advanced AI integration
