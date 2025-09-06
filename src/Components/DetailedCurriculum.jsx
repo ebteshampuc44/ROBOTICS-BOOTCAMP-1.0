@@ -3,7 +3,7 @@ import React from 'react';
 const DetailedCurriculum = () => {
   const curriculumData = [
     {
-      day: "Day 1",
+      day: "Session 1",
       title: "Arduino Programming & Integration",
       objective: "Provide hands-on experience with Arduino IDE and integrate sensors, actuators, and control hardware components effectively.",
       outcomes: [
@@ -13,10 +13,10 @@ const DetailedCurriculum = () => {
       ],
       projects: [ "Object detect & Measure distance using sensor", "Keypad Interfacing & Password System"],
       emoji: "♾️",
-      image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://i.ibb.co.com/zhmqVqnK/week-1-detailed-curriculam-jpeg.jpg"
     },
     {
-      day: "Day 2",
+      day: "Session 2",
       title: "ESP32 & IoT Applications",
       objective: "Learn ESP32 and core IoT concepts, focusing on device connectivity and Cloud communication using Wi-Fi.",
       outcomes: [
@@ -26,10 +26,10 @@ const DetailedCurriculum = () => {
       ],
       projects: ["Garden Monitoring", "Smart Home Automation (Using Relay)", "Real-time Data Logging"],
       emoji: "🌐",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://i.ibb.co.com/8gCJWKBD/week-2-detailed-curriculam-jpeg.jpg"
     },
     {
-      day: "Day 3",
+      day: "Session 3",
       title: "IoT App & Web Development",
       objective: "Design and Develop mobile apps, APIs & web dashboards for real-time monitoring and control from Locahost.",
       outcomes: [
@@ -40,10 +40,10 @@ const DetailedCurriculum = () => {
       ],
       projects: ["IoT App (Flutter)", "API Development", "Web Dashboard (PHP)"],
       emoji: "📲",
-      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://i.ibb.co.com/8L941ntm/week-3-detailed-curriculam-jpeg.jpg"
     },
     {
-      day: "Day 4",
+      day: "Session 4",
       title: "Project Planning, Troubleshooting and Execution",
       objective: "Build structured project planning and supervised implementation, emphasizing problem-solving.",
       outcomes: [
@@ -53,10 +53,10 @@ const DetailedCurriculum = () => {
       ],
       projects: ["Supervised Project Implementation"],
       emoji: "📝",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://i.ibb.co.com/qYhPryX2/week-4-detailed-curriculam-jpeg.jpg"
     },
     {
-      day: "Day 5",
+      day: "Session 5",
       title: "Raspberry Pi & Machine Learning",
       objective: "Introduce advanced robotics & Apply Machine Learning Model with Raspberry Pi.",
       outcomes: [
@@ -67,10 +67,10 @@ const DetailedCurriculum = () => {
       ],
       projects: ["Autonomous Robots", "Predict Weather using ML Model"],
       emoji: "🤖",
-      image: "https://images.unsplash.com/photo-1581092160607-ee223103e4b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://i.ibb.co.com/Tf40yVy/week-5-detailed-curriculam-jpeg.jpg"
     },
     {
-      day: "Day 6",
+      day: "Session 6",
       title: "Project Showcase, Awards & Closing Ceremony",
       objective: "Demonstrate learnings with final project presentations and conclude the bootcamp with a closing ceremony.",
       outcomes: [
@@ -80,7 +80,7 @@ const DetailedCurriculum = () => {
       ],
       projects: ["Final Project Showcase (Group/Individual)"],
       emoji: "🎤",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      image: "https://i.ibb.co.com/FLpDKmk4/week-6-detailed-curriculam-jpeg.jpg"
     }
   ];
 
