@@ -15,13 +15,15 @@ const Footer = () => {
               />
             </div>
             {/* Improved for mobile: text size adjustment and better spacing */}
-            <h3 className="font-bold text-lg sm:text-2xl text-white text-center sm:text-left leading-tight">
-              PREMIER UNIVERSITY<br className="sm:hidden" /> ROBOTICS CLUB
-            </h3>
+            <div className="text-center sm:text-left">
+              <h3 className="font-bold text-lg sm:text-2xl text-white leading-tight">
+                PREMIER UNIVERSITY<br className="sm:hidden" /> ROBOTICS CLUB
+              </h3>
+              <p className="text-sm sm:text-lg leading-relaxed mt-2">
+                where innovation meets passion
+              </p>
+            </div>
           </div>
-          <p className="text-sm sm:text-lg leading-relaxed text-center sm:text-left">
-            where innovation meets passion
-          </p>
           <div className="space-y-3 text-sm sm:text-base">
            <p className="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-[#3a7eff]" fill="none" viewBox="0 0 24 24" stroke="white">
