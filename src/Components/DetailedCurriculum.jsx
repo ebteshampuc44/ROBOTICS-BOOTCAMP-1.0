@@ -173,7 +173,7 @@ const DetailedCurriculum = () => {
                 <img src="https://i.ibb.co.com/Y7JLGmK7/package-cube-box-for-delivery.png" alt="Programming" className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Project</h3>
-              <p className="text-gray-600">Efficient coding with strong algorithms and data structures</p>
+              <p className="text-gray-600">Innovative, impactful project with excellent execution and teamwork</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">

@@ -54,19 +54,21 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden flex flex-col items-center gap-3 pb-4 bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] px-4 border-t border-[#87CEEB]/30">
-          <Link to="/curriculum" onClick={() => setIsOpen(false)} className="w-full">
-            <button className="w-full px-4 py-2.5 rounded-full bg-white text-[#2C4CA7] font-semibold shadow-md hover:bg-gray-200 transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
-              Detailed Curriculum
-            </button>
-          </Link>
-          <button className="w-full px-4 py-2.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
-            Register Now
-          </button>
-        </div>
-      )}
+{/* Mobile Dropdown */}
+{isOpen && (
+  <div className="md:hidden flex flex-col items-center gap-3 pb-4 pt-4 bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] px-4 border-t border-[#87CEEB]/30">
+    <Link to="/curriculum" onClick={() => setIsOpen(false)}>
+      <button className="w-64 px-4 py-2.5 rounded-full bg-white text-[#2C4CA7] font-semibold shadow-md hover:bg-gray-200 transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
+        Detailed Curriculum
+      </button>
+    </Link>
+    <button className="w-64 px-4 py-2.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
+      Register Now
+    </button>
+  </div>
+)}
+
+
     </nav>
   );
 };
