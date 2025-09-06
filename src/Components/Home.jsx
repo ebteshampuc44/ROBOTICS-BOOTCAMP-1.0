@@ -175,7 +175,7 @@ const Home = () => {
         </svg>
       </div>
       <div>
-        <h3 className="text-xl font-bold mb-1 text-gray-800">Build IoT apps with mobile/web integration</h3>
+        <h3 className="text-xl font-bold mb-1 text-gray-800">Build IoT including APIs with web & mobile App</h3>
       </div>
     </div>
 
