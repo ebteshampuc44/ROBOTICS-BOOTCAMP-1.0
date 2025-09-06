@@ -4,90 +4,79 @@ const DetailedCurriculum = () => {
   const curriculumData = [
     {
       day: "Day 1",
-      title: "Opening Ceremony & Robotics Fundamentals",
-      objective: "Introduce participants to robotics history, concepts, and interaction with environments.",
+      title: "Arduino Programming & Integration",
+      objective: "Provide hands-on experience with Arduino IDE and integrate sensors, actuators, and control hardware components effectively.",
       outcomes: [
-        "Understand basic robotics concepts and importance.",
-        "Learn about components (sensors, actuators, controllers).",
-        "Explore industrial applications."
+        "Install & use Arduino IDE",
+        "Learn electronics & circuit integration",
+        "Control Sensors, Servo, Display"
       ],
-      projects: ["LED Blinking", "Sensor Data Display (LCD)", "Keypad Interfacing"],
-      emoji: "🔧",
-      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-    },
-    {
-      day: "Day 2",
-      title: "Arduino IDE & Arduino Projects",
-      objective: "Hands-on microcontroller programming with Arduino.",
-      outcomes: [
-        "Install & use Arduino IDE.",
-        "Learn electronics & circuit integration.",
-        "Control sensors, motors, LEDs."
-      ],
-      projects: ["Bluetooth RC Car", "Servo Control", "Obstacle Avoidance Robot Car"],
-      emoji: "🚗",
+      projects: [ "Object detect & Measure distance using sensor", "Keypad Interfacing & Password System"],
+      emoji: "♾️",
       image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
     {
-      day: "Day 3",
+      day: "Day 2",
       title: "ESP32 & IoT Applications",
-      objective: "Explore IoT concepts with ESP32.",
+      objective: "Learn ESP32 and core IoT concepts, focusing on device connectivity and Cloud communication using Wi-Fi.",
       outcomes: [
-        "Setup ESP32 with sensors/actuators.",
-        "Send/receive data via cloud.",
-        "Explore IoT applications."
+        "Setup ESP32 with sensors/actuators",
+        "Send/receive data via cloud",
+        "Explore IoT applications"
       ],
-      projects: ["IoT Weather Monitoring", "Home Automation (Using Relay)"],
+      projects: ["Garden Monitoring", "Smart Home Automation (Using Relay)", "Real-time Data Logging"],
       emoji: "🌐",
       image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
     {
-      day: "Day 4",
+      day: "Day 3",
       title: "IoT App & Web Development",
-      objective: "Build apps and web dashboards to connect IoT systems.",
+      objective: "Design and Develop mobile apps, APIs & web dashboards for real-time monitoring and control from Locahost.",
       outcomes: [
-        "Basics of Flutter app development.",
-        "Basics of API & PHP dashboard.",
-        "Real-time IoT monitoring & control."
+        "Basics of Flutter app development",
+        "Basics of API & PHP dashboard",
+        "Real-time IoT monitoring & control",
+        "HTTP, MQTT protocol understanding"
       ],
       projects: ["IoT App (Flutter)", "API Development", "Web Dashboard (PHP)"],
       emoji: "📲",
       image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
     {
-      day: "Day 5",
-      title: "Project Planning and Execution",
-      objective: "Develop and execute a project proposal under trainer supervision, focusing on problem-solving in robotics/IoT.",
+      day: "Day 4",
+      title: "Project Planning, Troubleshooting and Execution",
+      objective: "Build structured project planning and supervised implementation, emphasizing problem-solving.",
       outcomes: [
-        "Create a detailed project proposal.",
-        "Execute the proposed project with guidance from trainers.",
-        "Identify and solve practical problems in robotics/IoT systems."
+        "Create a detailed project proposal",
+        "Execute the proposed project with guidance from trainers",
+        "Identify & solve problems in project"
       ],
-      projects: ["Project Proposal Development", "Supervised Project Implementation"],
+      projects: ["Supervised Project Implementation"],
       emoji: "📝",
       image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
     {
-      day: "Day 6",
+      day: "Day 5",
       title: "Raspberry Pi & Machine Learning",
-      objective: "Introduce advanced robotics & AI/ML with Raspberry Pi.",
+      objective: "Introduce advanced robotics & Apply Machine Learning Model with Raspberry Pi.",
       outcomes: [
-        "Setup Raspberry Pi.",
-        "Learn Python for robotics.",
-        "Use ML dataset (Iris) and gesture-based control."
+        "Setup Raspberry Pi",
+        "Learn Python for robotics",
+        "Data Preprocessing & Model Training",
+        "Forcast data using ML Model"
       ],
-      projects: ["Raspberry Pi ML (Iris Dataset)", "Hand Gesture Control"],
+      projects: ["Autonomous Robots", "Predict Weather using ML Model"],
       emoji: "🤖",
       image: "https://images.unsplash.com/photo-1581092160607-ee223103e4b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
     },
     {
-      day: "Day 7",
-      title: "Project Showcase & Closing Ceremony",
+      day: "Day 6",
+      title: "Project Showcase, Awards & Closing Ceremony",
       objective: "Demonstrate learnings with final project presentations and conclude the bootcamp with a closing ceremony.",
       outcomes: [
-        "Present projects with innovation.",
-        "Receive feedback from mentors.",
-        "Certification & awards ceremony."
+        "Present projects with innovation",
+        "Receive feedback from mentors",
+        "Certification & Awards ceremony"
       ],
       projects: ["Final Project Showcase (Group/Individual)"],
       emoji: "🎤",
@@ -114,8 +103,8 @@ const DetailedCurriculum = () => {
         <div className="bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] rounded-xl shadow-lg p-8 mb-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Opening Ceremony</h2>
-            <p className="text-lg mb-2">September 10, 2025 | 9:00 AM</p>
-            <p className="text-lg">Main Auditorium, Premier University</p>
+            <p className="text-lg mb-2">September 20, 2025 | 11:00 AM</p>
+            <p className="text-lg">Hazari Lane Premises, Premier University</p>
           </div>
         </div>
 
@@ -183,7 +172,7 @@ const DetailedCurriculum = () => {
               <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-blue-100 rounded-full">
                 <img src="https://i.ibb.co.com/Y7JLGmK7/package-cube-box-for-delivery.png" alt="Programming" className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Programming Wing</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Project</h3>
               <p className="text-gray-600">Focus on algorithms, data structures, and competitive programming</p>
             </div>
             
@@ -191,7 +180,7 @@ const DetailedCurriculum = () => {
               <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-green-100 rounded-full">
                 <img src="https://i.ibb.co.com/rKQgbDQg/party.png" alt="Microcontroller" className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Microcontroller Projects</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Problem Solving</h3>
               <p className="text-gray-600">Hardware integration and embedded systems development</p>
             </div>
             
@@ -199,7 +188,7 @@ const DetailedCurriculum = () => {
               <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-purple-100 rounded-full">
                 <img src="https://i.ibb.co.com/sknQpHZ/meeting.png" alt="Software Development" className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Software Development</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Best Programmer</h3>
               <p className="text-gray-600">Full-stack development and software engineering practices</p>
             </div>
           </div>
