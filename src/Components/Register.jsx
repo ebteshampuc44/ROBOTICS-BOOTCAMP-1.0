@@ -2,23 +2,35 @@ import React from 'react';
 
 const Register = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Main Content */}
-      <main className="flex-grow bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto"> {/* Increased width */}
+      <main className="flex-grow py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          
           {/* Header Section */}
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
-              Register early to secure your seat
+          <div className="text-center mb-12">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Register Early to Secure Your Seat
             </h1>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-             Confirm your registration by completing the form
+              Confirm your registration by completing the form
             </p>
           </div>
 
-          {/* Embedded Google Form */}
-          <div className=" rounded-xl  overflow-hidden">
+          {/* Placeholder for Form */}
+          <div className="rounded-xl bg-yellow-50 p-12 text-center border-2 border-dashed border-yellow-400 mb-12">
+            <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
+              Form Coming Soon
+            </h2>
+            <p className="text-yellow-700">
+              This registration form will be available soon. Stay tuned!
+            </p>
+          </div>
+
+          {/* Embedded Google Form (commented for now) */}
+          
+          {/* <div className="rounded-xl overflow-hidden mb-12">
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
               width="100%" 
@@ -32,6 +44,7 @@ const Register = () => {
               Loading…
             </iframe>
           </div>
+          */}
 
           {/* Additional Information */}
           <div className="mt-12 bg-blue-50 rounded-xl p-6 text-center">
