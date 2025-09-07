@@ -5,15 +5,15 @@ const Register = () => {
     <div className="min-h-screen flex flex-col">
       {/* Main Content */}
       <main className="flex-grow bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto"> {/* Increased width */}
           {/* Header Section */}
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
-              Register for Robotics Bootcamp 1.0
+              Register early to secure your seat
             </h1>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Complete the form below to register for our 6-week intensive robotics program
+             Confirm your registration by completing the form
             </p>
           </div>
 
@@ -26,7 +26,7 @@ const Register = () => {
               frameBorder="0" 
               marginHeight="0" 
               marginWidth="0"
-              className="block"
+              className="block w-full"
               title="Robotics Bootcamp Registration Form"
             >
               Loading…

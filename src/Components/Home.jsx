@@ -452,7 +452,7 @@ const Home = () => {
               <div className="space-y-4">
                 {faqData.map((faq, index) => (
                   <div key={index} className="bg-white rounded-xl p-4 shadow-md">
-                    <button
+                    <div
                       className="flex justify-between items-center w-full text-left font-semibold text-lg text-gray-800"
                       onClick={() => toggleQuestion(index)}
                     >
@@ -466,9 +466,10 @@ const Home = () => {
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l极7 7-7-7"></path>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+
                       </svg>
-                    </button>
+                    </div>
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${
                         openQuestion === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
