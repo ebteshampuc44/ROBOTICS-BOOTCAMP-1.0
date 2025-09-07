@@ -41,7 +41,7 @@ const Home = () => {
       answer: "The bootcamp schedule and campus venue will be announced after registration. Please check our website and social media pages for updates on dates and locations."
     },
     {
-      question: " Is there a registration fee?",
+      question: " Is there any registration fee?",
       answer: "Yes, the registration fees are listed in the Payment & Kit section. Different rates apply for club committee, club members, RAS members, non-club members, and foreign participants."
     },
  

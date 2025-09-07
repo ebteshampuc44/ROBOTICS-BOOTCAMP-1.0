@@ -103,8 +103,8 @@ const DetailedCurriculum = () => {
         <div className="bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] rounded-xl shadow-lg p-8 mb-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-xl font-bold mb-4">Opening Ceremony</h2>
-            <p className="text-base mb-2">To be announced soon</p>
-            <p className="text-base">Hazari Lane Premises, Premier University</p>
+            <p className="text-base mb-2">Time : To be announced soon</p>
+            <p className="text-base">Location : Hazari Lane Premises, Premier University</p>
           </div>
         </div>
 
