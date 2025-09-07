@@ -485,7 +485,7 @@ const Home = () => {
       </section>
 
       {/* Call to Action Section - Mobile Responsive */}
-   // In Home.jsx, update the Call to Action Section:
+   
 <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#1E3A8A] text-white">
   <div className="container mx-auto text-center">
     <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 px-2">Ready to Start Your Robotics Journey?</h2>
