@@ -7,7 +7,7 @@ const Register = () => {
       <main className="flex-grow bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
               Register for Robotics Bootcamp 1.0
             </h1>
@@ -18,21 +18,19 @@ const Register = () => {
           </div>
 
           {/* Embedded Google Form */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <div className="aspect-w-16 aspect-h-16 lg:aspect-h-12">
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
-                width="100%" 
-                height="1200" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0"
-                className="rounded-lg"
-                title="Robotics Bootcamp Registration Form"
-              >
-                Loading…
-              </iframe>
-            </div>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
+              width="100%" 
+              height="1200" 
+              frameBorder="0" 
+              marginHeight="0" 
+              marginWidth="0"
+              className="block"
+              title="Robotics Bootcamp Registration Form"
+            >
+              Loading…
+            </iframe>
           </div>
 
           {/* Additional Information */}

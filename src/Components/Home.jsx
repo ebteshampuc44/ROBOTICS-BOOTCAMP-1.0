@@ -57,7 +57,7 @@ const Home = () => {
       <HeroSection />
 
       {/* Why Robotics Bootcamp Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
+     <section id="why-section" className="py-16 px-4 md:px-8 lg:px-16 bg-white">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-extrabold mb-4 text-[#1E3A8A]">Why Join Our Robotics Bootcamp? </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">

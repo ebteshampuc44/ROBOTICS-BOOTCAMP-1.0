@@ -1,3 +1,4 @@
+// HeroSection.jsx
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -31,6 +32,14 @@ const HeroSection = () => {
     });
 
     mouse.current = { x: e.clientX, y: e.clientY };
+  };
+
+  // Smooth scroll to "Why Join Our Robotics Bootcamp?" section
+  const scrollToWhySection = () => {
+    const whySection = document.getElementById("why-section");
+    if (whySection) {
+      whySection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   // Smooth glow animation effect
@@ -261,7 +270,7 @@ const HeroSection = () => {
           >
             {[
               { icon: "🤖", text: "Empower Robotic Innovation" },
-              { icon: "💻", text: "Code Tomorrow’s Tech" },
+              { icon: "💻", text: "Code Tomorrow's Tech" },
             ].map((feature, index) => (
               <motion.div
                 key={index}
@@ -304,6 +313,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
+            onClick={scrollToWhySection}
           >
             <motion.div
               className="absolute inset-0 bg-white opacity-0"
