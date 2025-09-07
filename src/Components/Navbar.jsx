@@ -65,9 +65,11 @@ const Navbar = () => {
               Detailed Curriculum
             </button>
           </Link>
-          <button className="px-4 py-1.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] hover:scale-105 transition-all duration-300 text-sm md:text-base outline-none focus:outline-none focus:ring-0">
-            Register Now
-          </button>
+          <Link to="/register">
+            <button className="px-4 py-1.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] hover:scale-105 transition-all duration-300 text-sm md:text-base outline-none focus:outline-none focus:ring-0">
+              Register Now
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -91,9 +93,11 @@ const Navbar = () => {
               Detailed Curriculum
             </button>
           </Link>
-          <button className="w-64 px-4 py-2.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
-            Register Now
-          </button>
+          <Link to="/register" onClick={() => setIsOpen(false)}>
+            <button className="w-64 px-4 py-2.5 rounded-full bg-[#87CEEB] text-[#2C4CA7] font-semibold shadow-md hover:bg-[#a0d9f3] transition-all duration-300 text-sm outline-none focus:outline-none focus:ring-0">
+              Register Now
+            </button>
+          </Link>
         </div>
       )}
     </nav>

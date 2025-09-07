@@ -485,22 +485,24 @@ const Home = () => {
       </section>
 
       {/* Call to Action Section - Mobile Responsive */}
-      <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#1E3A8A] text-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 px-2">Ready to Start Your Robotics Journey?</h2>
-       
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-white text-[#1E3A8A] font-semibold shadow-md hover:bg-gray-200 hover:scale-105 transition-all duration-300 text-base sm:text-lg">
-              Register Now
-            </button>
-            <Link to="/curriculum" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-transparent border-2 border-white text-white font-semibold shadow-md hover:bg-white hover:text-[#1E3A8A] hover:scale-105 transition-all duration-300 text-base sm:text-lg">
-                Detailed Curriculum
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
+   // In Home.jsx, update the Call to Action Section:
+<section className="py-12 px-4 md:px-8 lg:px-16 bg-[#1E3A8A] text-white">
+  <div className="container mx-auto text-center">
+    <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 px-2">Ready to Start Your Robotics Journey?</h2>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <Link to="/register">
+        <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-white text-[#1E3A8A] font-semibold shadow-md hover:bg-gray-200 hover:scale-105 transition-all duration-300 text-base sm:text-lg">
+          Register Now
+        </button>
+      </Link>
+      <Link to="/curriculum" className="w-full sm:w-auto">
+        <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-transparent border-2 border-white text-white font-semibold shadow-md hover:bg-white hover:text-[#1E3A8A] hover:scale-105 transition-all duration-300 text-base sm:text-lg">
+          Detailed Curriculum
+        </button>
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* Add custom CSS for smooth transitions */}
       <style jsx>{`
