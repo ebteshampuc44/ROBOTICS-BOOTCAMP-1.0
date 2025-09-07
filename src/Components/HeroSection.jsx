@@ -38,7 +38,14 @@ const HeroSection = () => {
   const scrollToWhySection = () => {
     const whySection = document.getElementById("why-section");
     if (whySection) {
-      whySection.scrollIntoView({ behavior: "smooth" });
+      // Calculate the position to scroll to
+      const elementPosition = whySection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - 80; // Adjust 80px if you have a fixed header
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
