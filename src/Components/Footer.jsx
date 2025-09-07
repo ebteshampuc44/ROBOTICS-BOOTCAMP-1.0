@@ -15,13 +15,15 @@ const Footer = () => {
               />
             </div>
             {/* Improved for mobile: text size adjustment and better spacing */}
-            <h3 className="font-bold text-lg sm:text-2xl text-white text-center sm:text-left leading-tight">
-              PREMIER UNIVERSITY<br className="sm:hidden" /> ROBOTICS CLUB
-            </h3>
+            <div className="text-center sm:text-left">
+              <h3 className="font-bold text-lg sm:text-2xl text-white leading-tight">
+                PREMIER UNIVERSITY<br className="sm:hidden" /> ROBOTICS CLUB
+              </h3>
+              <p className="text-sm sm:text-lg leading-relaxed mt-2">
+                where innovation meets passion
+              </p>
+            </div>
           </div>
-          <p className="text-sm sm:text-lg leading-relaxed text-center sm:text-left">
-            where innovation meets passion
-          </p>
           <div className="space-y-3 text-sm sm:text-base">
            <p className="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-[#3a7eff]" fill="none" viewBox="0 0 24 24" stroke="white">
@@ -81,13 +83,13 @@ const Footer = () => {
           
           <div className="mt-4">
             <p className="text-sm sm:text-lg font-medium mb-2">Subscribe to our newsletter</p>
-            <div className="flex flex-col">
+            <div className="flex">
               <input 
                 type="email" 
                 placeholder="Your email address" 
-                className="w-full px-4 py-2 bg-[#0d2a75] border border-[#3a7eff]/40 rounded-t focus:outline-none focus:ring-2 focus:ring-[#3a7eff] text-sm sm:text-base"
+                className="flex-grow px-4 py-2 bg-[#0d2a75] border border-[#3a7eff]/40 rounded-l focus:outline-none focus:ring-2 focus:ring-[#3a7eff] text-sm sm:text-base"
               />
-              <button className="bg-[#3a7eff] hover:bg-[#5a92ff] text-white px-4 py-2 rounded-b transition-colors text-sm sm:text-base font-semibold mt-[-1px]">
+              <button className="bg-[#3a7eff] hover:bg-[#5a92ff] text-white px-4 py-2 rounded-r transition-colors text-sm sm:text-base font-semibold whitespace-nowrap">
                 Subscribe
               </button>
             </div>
