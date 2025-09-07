@@ -18,7 +18,7 @@ const Register = () => {
           </div>
 
           {/* Embedded Google Form */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div className=" rounded-xl  overflow-hidden">
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
               width="100%" 
