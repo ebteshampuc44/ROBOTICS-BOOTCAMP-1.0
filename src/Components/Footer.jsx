@@ -30,7 +30,7 @@ const Footer = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span className="break-words">Academic Building #4, 44 Hazari Lane, Kotwali, Chittagong</span>
+              <span className="break-words">Academic Building #4, 44 Hazari Lane Premises, Kotwali, Chittagong</span>
             </p>
             <p className="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 flex-shrink-0 text-[#3a7eff]" fill="none" viewBox="0 0 24 24" stroke="white">
@@ -100,7 +100,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="max-w-6xl mx-auto mt-6 pt-4 border-t border-[#3a7eff]/40">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-xs sm:text-base text-white text-center md:text-left mb-3 md:mb-0">© 2024 Premier University Robotics Club. All rights reserved.</p>
+          <p className="text-xs sm:text-base text-white text-center md:text-left mb-3 md:mb-0">© 2025 Premier University Robotics Club. All rights reserved.</p>
           <div className="flex flex-col sm:flex-row items-center">
             <span className="text-xs sm:text-base text-white mr-0 sm:mr-2 mb-1 sm:mb-0">Developed with</span>
             <div className="flex items-center">
