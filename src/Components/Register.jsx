@@ -32,7 +32,7 @@ const Register = () => {
           </div>
 
           {/* Embedded Google Form (commented for now) */}
-          {/*
+{/*           
           <div className="rounded-xl overflow-hidden mb-12">
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
