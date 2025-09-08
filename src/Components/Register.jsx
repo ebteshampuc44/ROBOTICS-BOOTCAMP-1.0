@@ -23,14 +23,17 @@ const Register = () => {
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
               Form Coming Soon
             </h2>
-            <p className="text-yellow-700">
+            <p className="text-yellow-700 mb-2">
               This registration form will be available soon. Stay tuned!
+            </p>
+            <p className="text-red-600 font-medium">
+              The form will be live from 11th of this month.
             </p>
           </div>
 
           {/* Embedded Google Form (commented for now) */}
-          
-          {/* <div className="rounded-xl overflow-hidden mb-12">
+          {/*
+          <div className="rounded-xl overflow-hidden mb-12">
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
               width="100%" 
