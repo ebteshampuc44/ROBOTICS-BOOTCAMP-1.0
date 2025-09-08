@@ -142,7 +142,7 @@ const Home = () => {
           <div className="lg:w-1/2">
   <h2 className="text-4xl font-extrabold mb-4 text-[#1E3A8A]">Program Outcome</h2>
   <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-    By the end of the Bootcamp, participants will:
+    By the end of the Bootcamp, participants will be able to:
   </p>
 
   <div className="space-y-6">
@@ -164,7 +164,7 @@ const Home = () => {
         </svg>
       </div>
       <div>
-        <h3 className="text-xl font-bold mb-1 text-gray-800">Be able to design & implement Arduino & ESP32 projects</h3>
+        <h3 className="text-xl font-bold mb-1 text-gray-800">To design & implement Arduino & ESP32 projects</h3>
       </div>
     </div>
 
