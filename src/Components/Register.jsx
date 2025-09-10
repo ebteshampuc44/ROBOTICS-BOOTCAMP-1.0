@@ -19,7 +19,7 @@ const Register = () => {
           </div>
 
           {/* Placeholder for Form */}
-          <div className="rounded-xl bg-yellow-50 p-12 text-center border-2 border-dashed border-yellow-400 mb-12">
+          {/* <div className="rounded-xl bg-yellow-50 p-12 text-center border-2 border-dashed border-yellow-400 mb-12">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
               Form Coming Soon
             </h2>
@@ -29,13 +29,13 @@ const Register = () => {
             <p className="text-red-600 font-medium">
               The form will be live from 11th of this month.
             </p>
-          </div>
-
+          </div> */}
+{/* 
           {/* Embedded Google Form (commented for now) */}
-{/*           
+          
           <div className="rounded-xl overflow-hidden mb-12">
             <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSenwBIDGiKbwaAchkMxufnU1cUFXCliK-p8mynzTC1T8BHGPA/viewform?embedded=true" 
+              src="https://forms.gle/kaUEvYVYAdGopSLY7" 
               width="100%" 
               height="1200" 
               frameBorder="0" 
@@ -47,7 +47,7 @@ const Register = () => {
               Loading…
             </iframe>
           </div>
-          */}
+           
 
           {/* Additional Information */}
           <div className="mt-12 bg-blue-50 rounded-xl p-6 text-center">
