@@ -84,6 +84,17 @@ const DetailedCurriculum = () => {
     }
   ];
 
+  // Function to handle PDF download
+  const handleDownload = () => {
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = 'public/bootcamp_schedule.pdf'; // Update this path to your actual PDF file
+    link.download = 'Robotics-Bootcamp-Session-Schedule.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -160,6 +171,19 @@ const DetailedCurriculum = () => {
           ))}
         </div>
 
+        {/* Download Button Section */}
+        <div className="text-center mb-12">
+          <button 
+            onClick={handleDownload}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 flex items-center justify-center mx-auto"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Download Session Schedule
+          </button>
+        </div>
+
         {/* Club Wings Section */}
         <div className="bg-gray-100 rounded-xl p-8 mb-12">
           <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
@@ -191,8 +215,6 @@ const DetailedCurriculum = () => {
             </div>
           </div>
         </div>
-
-    
 
       </div>
     </div>
