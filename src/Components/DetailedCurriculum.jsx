@@ -88,7 +88,7 @@ const DetailedCurriculum = () => {
  const handleDownload = () => {
     // For Netlify deployment, use a direct link to the PDF
     const link = document.createElement('a');
-    link.href = '/bootcamp_schedule.pdf'; // PDF should be in public folder
+    link.href = 'public/bootcamp_Schedule1.pdf'; // PDF should be in public folder
     link.download = 'Robotics-Bootcamp-Session-Schedule.pdf';
     document.body.appendChild(link);
     link.click();
@@ -115,7 +115,7 @@ const DetailedCurriculum = () => {
         <div className="bg-gradient-to-b from-[#2C4CA7] to-[#4A6ED1] rounded-xl shadow-lg p-8 mb-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-xl font-bold mb-4">Opening Ceremony</h2>
-            <p className="text-base mb-2">Time : To be announced soon</p>
+            <p className="text-base mb-2">Time : 22 September 2025 Monday 1:30 PM – 2:15 PM Section A + B Room : 808</p>
             <p className="text-base">Location : Hazari Lane Premises, Premier University</p>
           </div>
         </div>
@@ -177,13 +177,13 @@ const DetailedCurriculum = () => {
             onClick={handleDownload}
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 flex items-center justify-center mx-auto transform hover:scale-105"
           >
-            {/* <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-            </svg> */}
+            </svg>
             Download Session Schedule
           </button>
          
-        </div>
+        </div> 
 
         {/* Club Wings Section */}
         <div className="bg-gray-100 rounded-xl p-8 mb-12">
